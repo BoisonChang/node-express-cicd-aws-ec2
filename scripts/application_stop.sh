@@ -1,8 +1,5 @@
 #!/bin/bash
 #Stopping existing node servers
-#!/bin/bash
-#Stopping existing node servers
-echo "Stopping any existing node servers"
 #Find the process IDs of the node servers to be stopped
 pids=$(ps -ef | grep "node server.js" | grep -v grep | awk '{print $2}')
 #Loop through the process IDs and kill them one by one
